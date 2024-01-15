@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Vanilla Weather App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main class="main-container">
+        <div>
+          <h1 class="city" id="search-city"></h1>
+          <p class="weather-app-details">
+            <span id="time"></span><strong id="description"></strong>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind Speed:
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+        <div class="weather-temp-container">
+          <div class="weather-temp-icon" id="icon"></div>
+          <div class="weather-temp-value" id="temp-value"></div>
+          <div class="weather-temp-units">ºC</div>
+        </div>
+      </main>
+      <div class="weather-forecast" id="forecast"></div>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/p3arlt" target="_blank">Perla Toscano</a> is open-sourced on 
+        <a href="" target="_blank">GitHub</a> and hosted on
+        <a href="" target="_blank">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
